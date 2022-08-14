@@ -1,0 +1,366 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.site-header{
+    background: #000;
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}
+.language-select{
+    height: 20px;
+    font-size: small;
+    background-color: #000;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 15px;
+} 
+.language-select:hover{
+    color: #c0c0c0;
+}
+/* .nav-wrap{
+    width: 100%;
+    background: transparent;
+    height: 100%;
+} */
+.logo{
+    padding-top: 20px ;
+   height: 100px;
+   width: 370px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+}
+.nav-toggle{
+    margin-left: auto;
+    margin-right: 0;
+}
+.navigation{
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    height: 50px;
+}
+.navigation nav{
+    border-radius: 30px;
+    background-color: #3132fe;
+    height: 50px;
+}
+.navbar-nav{
+    width: 100vw;
+}
+li{
+    border-radius: 30px;
+    background-color: #3132fe;
+    font-family: 'Saira Stencil One', cursive;
+    /* font-size: 1.25rem; */
+    color: white;
+    padding: 8px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 12px;
+    background-color: #3132fe;
+    z-index: 1;
+}
+.drop{
+    border-style: none;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    /* margin: auto; */
+    /* padding-left: 30px;
+    padding-right: 30px; */
+}
+.nav-item:hover{
+    background-color: yellow;
+    color: white;
+}
+.drop:hover{
+    color: #3132fe;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.home-btn{  
+
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    margin-left: 3px;
+    background-color: yellow;
+    color: #3132fe;
+    cursor: pointer;
+    /* margin: auto; */
+}
+.licence-btn{
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    background-color: yellow;
+    color: #3132fe;
+    cursor: pointer;
+    /* margin: auto; */
+}
+.download-btn{
+    background-color: #ff0082;
+    /* padding-left: 44px;
+    padding-right: 44px; */
+    margin-right: 3px;
+}
+
+.download-btn:hover{
+    background-color: yellow;
+    color: #050566;
+}
+@media(max-width:574px) {
+    .home-btn{
+        margin-left: 0;
+    }
+    .navigation li{
+        border-radius: 0;
+        width: 100%;
+    }
+    .navigation nav{
+        border-radius: 0;
+    }
+    .navigation{
+        width: 100%;
+    }
+}
+@media(max-width:816px)  {
+    .navigation li{
+        font-size: smaller;
+    }
+}
+@media(max-width:706px)  {
+    .navigation li{
+        font-size: x-small;
+    }
+}
+.navbar{
+    margin-top: 30px;
+}
+.banner{
+    background-color: #9600f5;
+}
+.main-page{
+    height: 758px;
+}
+.carousel1{
+    height: 400px;
+    background-color: yellow;
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive;
+}
+.wrapper{
+    width: 100%;
+}
+.wrapper .carousel{
+    max-width: 881px;
+    margin: auto;
+    padding: 0 30px;
+}
+.carousel .card{
+    background-color: #ff0082;
+    color: #000096;
+    height: 202px;
+    text-align: center;
+    font-size: 18px;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    border-radius: 0;
+}
+.carousel .card:hover{
+    color: yellow;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-dot{
+    height: 5px;
+    width: 45px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    background: #979191!important;
+    transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active{
+    background: #ff0082!important;
+}
+.latest-event{
+    position: relative;
+    top: 47px;
+    color: #000096;
+    font-size: 30px;   
+}
+.carousel .card::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    right: 10px;
+    bottom: 14px;
+    background: url(images/arrow.png) no-repeat 0 0/100% auto;
+    border-radius: 50%;
+    border: 1px solid #ffff00;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.scroll-section{
+    /* height: 544px; */
+    background-image: url(images/div-bg.jpg);
+    background-size: cover;
+    font-family: 'Saira Stencil One', cursive;
+    color: yellow;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+}
+.info-button{
+    background: white;
+    color: #000096;
+
+}
+.scroll-box{
+    height: 241px;
+    background: #000096;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px solid yellow;
+}
+.scroll{
+    height: 70px;
+    width: 103%;
+    position: relative;
+    left: -12px;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.info-btn{
+    background-color: yellow;
+    color: #000096;
+    border-radius: 20px;
+    border-style: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: sans-serif;
+}
+.scroll-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    color: white;
+}
+.scroll-btn{
+    background-color: #000096;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: sans-serif;
+}
+.more{
+    border-radius: 100px;
+    font-size: 20px;
+    background-color: #000096;
+    color: yellow;
+    border: 1px solid yellow;
+    margin: auto;
+    padding: 10px;
+}
+.intro-section{
+    background-color: yellow;
+}
+.intro-heading{
+    font-size: 2.2857142857rem;
+    font-family: 'Saira Stencil One', cursive;
+    font-weight: bold; 
+    color: #000096;
+    text-align: center;
+    padding: 30px;
+}
+.intro-description{
+    text-align: center;
+    font-size: 1.2285714286rem;
+    font-family: 'Saira Stencil One', cursive;
+    font-weight: bold; 
+    color: #000096;
+}
+.intro-second-head{
+    text-decoration: underline;
+    color: #000096;
+    font-weight: bold;
+    font-size: 1.2857142857rem;
+}
+.intro-second-contend{
+    color: #000096;
+    font-weight: bold;
+}
+.intro-third-head{
+    text-decoration: underline;
+    color: #000096;
+    font-weight: bold;
+    font-size: 1.2857142857rem;
+}
+.intro-third-contend{
+    color: #000096;
+    font-weight: bold;
+}
+.trailer-section{
+    height: 650px;
+    background-image: url(images/div-bg.jpg);
+    background-size: cover;
+}
+.trailer-text{
+    height: 117px;
+    text-align: center;
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Saira Stencil One', cursive;
+    padding-top: 55px;
+}
+.container2{
+    background-color: #3132fe;
+    width: 70%;
+    height: 450px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.play-button{
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   margin: auto;
+}
+
+/* .footer-contents{
+    height: 720px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}     */
